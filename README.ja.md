@@ -50,13 +50,13 @@ https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 ### 辞書: mecab-ipadic
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
-| jawikivec.ipadic.20180520.tar.xz | jawikicorpus.20180520 | mecab-ipadic-2.7.0-20070801 | 898b2562d6b851b84e4b467b92e5782a |
+| [jawikivec.ipadic.20180520.tar.xz](https://www.dropbox.com/s/98ftqtydopryaua/jawikivec.ipadic.20180520.tar.xz) | jawikicorpus.20180520 | mecab-ipadic-2.7.0-20070801 | 898b2562d6b851b84e4b467b92e5782a |
 
 ### 辞書: mecab-ipadic-NEologd
 
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
-| jawikivec.ipadic-neologd.20180520.tar.xz | jawikicorpus.20180520 | mecab-ipadic-NEologd,b8b282537589becf7256e74c80c543aa2eba5674 | 9d67c83dfe2ceb79bb3ac446a42ede40 |
+| [jawikivec.ipadic-neologd.20180520.tar.xz](https://www.dropbox.com/s/wvq0s1fyaxuo8gy/jawikivec.ipadic-neologd.20180520.tar.xz) | jawikicorpus.20180520 | mecab-ipadic-NEologd,b8b282537589becf7256e74c80c543aa2eba5674 | 9d67c83dfe2ceb79bb3ac446a42ede40 |
 
 ## ファイル構成
 以下のtarコマンドでファイルを解凍すると5つのファイルが作られます。
