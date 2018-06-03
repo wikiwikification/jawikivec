@@ -3,7 +3,7 @@
 ## 概要
 
 日本語版Wikipediaから抽出した単語および記事へのリンクを表すエンティティの分散表現ベクトルです。
-東北大学 乾・鈴木研究室の鈴木正敏さんが公開している[「日本語 Wikipedia エンティティベクトル」(日本語ページ)](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)の仕様を元にデータを作成しています。
+東北大学 乾・鈴木研究室の鈴木正敏さんが公開している[「日本語 Wikipedia エンティティベクトル」(日本語ページ)](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)の仕様を基にデータを作成しています。
 
 ### もう少し詳しく
 
