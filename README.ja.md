@@ -2,14 +2,13 @@
 
 ## 概要
 
-日本語版Wikipediaから抽出した単語および記事へのリンクを表すエンティティの分散表現ベクトルです。
-東北大学 乾・鈴木研究室の鈴木正敏さんが公開している[「日本語 Wikipedia エンティティベクトル」(日本語ページ)](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)の仕様を基にデータを作成しています。
+日本語版Wikipediaから抽出した単語および記事へのリンクを表すエンティティの分散表現ベクトルです。東北大学 乾・鈴木研究室の鈴木正敏さんが公開している[「日本語 Wikipedia エンティティベクトル」(日本語ページ)](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)の仕様を基にデータを作成しています。
 
-### もう少し詳しく
+## 簡単な使い方
 
-#### 単語の扱い
+[Gensimライブラリ](https://radimrehurek.com/gensim/)を用いた例を示します。
 
-分かち書きされた単語についてはそのままの形で登録されています。
+分かち書きされた単語についてはそのままの形でword2vecの単語として登録しています。
 
 ```
 >>> from gensim.models import KeyedVectors
@@ -18,29 +17,13 @@
 [('事', 0.9618349075317383), ('もの', 0.7732754349708557), ('ため', 0.7425500154495239), ... ]
 ```
 
-またWikipedia記事へのリンクを指し示すエンティティについては前後に半角の角括弧をつけて `[エンティティ]` の形で登録されています。
-
+またWikipedia記事へのリンクを指し示すエンティティについては前後に半角の角括弧をつけた `[エンティティ]` の形でword2vecの単語として登録しています。
 ```
 >>> from gensim.models import KeyedVectors
 >>> w2v_model = KeyedVectors.load_word2vec_format('entity_vector.model.bin', binary=True, unicode_errors='ignore')
 >>> print(w2v_model.most_similar(['[72時間ホンネテレビ]']))
 [('[AbemaPrime]', 0.6929168701171875), ('[原宿AbemaNews]', 0.6854027509689331), ...]
 ```
-
-#### word2vecのオプション
-
-以下の設定で分散表現ベクトルを生成しています。
-
-| Option | Value |
-| --- | --- |
-| -size | 200 |
-| -window | 5 |
-| -sample | 1e-3 |
-| -negative | 5 |
-| -hs | 0 |
-| -iter | 5 |
-| -min-count | 5 |
-| -cbow | 1 |
 
 ## ダウンロード方法
 サイズが大きいため、Dropboxにファイルをアップロードしています。
@@ -92,3 +75,20 @@ word2vecのテキスト出力です。
 ### LICENSE.md
 
 ライセンスについての文書です。
+
+## 補足
+
+### word2vecのオプション
+
+以下の設定で分散表現ベクトルを生成しています。
+
+| Option | Value |
+| --- | --- |
+| -size | 200 |
+| -window | 5 |
+| -sample | 1e-3 |
+| -negative | 5 |
+| -hs | 0 |
+| -iter | 5 |
+| -min-count | 5 |
+| -cbow | 1 |
