@@ -30,12 +30,12 @@
 
 https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 
-### 辞書: mecab-ipadic
+### 辞書: [mecab-ipadic](https://github.com/taku910/mecab/tree/master/mecab-ipadic)
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
 | [jawikivec.ipadic.20180520.tar.xz](https://www.dropbox.com/s/98ftqtydopryaua/jawikivec.ipadic.20180520.tar.xz) | jawikicorpus.20180520 | mecab-ipadic-2.7.0-20070801 | 898b2562d6b851b84e4b467b92e5782a |
 
-### 辞書: mecab-ipadic-NEologd
+### 辞書: [mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd)
 
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
@@ -51,15 +51,6 @@ tar xvJf jawikivec.[dictionary].yyyyMMdd.tar.xz
 ### entity_vector.model.bin
 
 word2vecのバイナリ出力です。
-Pythonの場合は[Gensimライブラリ](https://radimrehurek.com/gensim/)を利用するのが便利です。
-以下のコードスニペットはモデルファイルを読み込んだ上で、Wikipediaエンティティ「ヤマハ」に分散表現の観点で近いエンティティおよび単語を取り出すというものです。
-
-```
-from gensim.models import KeyedVectors
-w2v_model = KeyedVectors.load_word2vec_format('entity_vector.model.bin', binary=True, unicode_errors='ignore')
-
-print(w2v_model.most_similar(['[ヤマハ]']))
-```
 
 ### entity_vector.model.txt
 
@@ -77,6 +68,36 @@ word2vecのテキスト出力です。
 ライセンスについての文書です。
 
 ## 補足
+
+### 日本語 Wikipedia エンティティベクトル
+
+「日本語 Wikipedia エンティティベクトル」の簡単な説明を行います。詳しい内容は本家の[「日本語 Wikipedia エンティティベクトル」(日本語ページ)](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/) をご覧ください。
+
+「日本語 Wikipedia エンティティベクトル」は、分かち書きされた単語とWikipediaのエンティティを同一の分散表現空間のベクトルとして表したものです。
+Wikipediaのエンティティと一般的な単語を区別するために、記事本文中のリンクを利用しています。
+
+例として、[Japanese-Wikipedia Wikification Corpus](https://github.com/wikiwikification/jawikicorpus)のWikipediaのエンティティ「AbemaTV」を挙げます。記事の内容は以下のとおりです。強調部分の文字列が記事へのリンクを表します。
+
+> <u>AbemaTV</u>
+> AbemaTV（アベマティーヴィー）は、**PC**・**スマートフォン**向けのライブストリーミング形式である**インターネットテレビ**（放送事業者ではない）。**サイバーエージェント**と**テレビ朝日**が出資して設立した株式会社AbemaTVが運営している。
+>
+> ...
+>
+> サイバーエージェントは従前から自社サービスのブランド名として「**Ameba**」を用いているが、「AmebaTV」はカナダの企業が別サイトで使用しており、「10年以上続く「Ameba」と違う新しさがありながら、「Ameba」の延長であることも伝えたい」ためにマスコットキャラクターの「Abema」から「AbemaTV」とした。この名称は「覚えにくい・発音しにくい・間違えやすいの3点セット」「正直言って、半分くらい後悔しています」と藤田はブログに記している。『「逆さ読みにするとAmebaになる」と言う理由で採用した』と言う発言もしている。
+
+word2vecの入力テキストには分かち書きされたものを使用する必要があります。そのため前処理として、リンク部分を `[エンティティ]` の形に書き換えた上で該当部分が必ず1トークンになるように制約を加えて分かち書きを行なっています。
+
+しかし、先の前処理のみですと、上の記事の「Ameba」「AbemaTV」のようにWikipediaエンティティを表しているといえるものの大部分が単なるテキストであると見なされます。これは[Wikipediaのガイドライン](https://ja.wikipedia.org/wiki/Wikipedia:%E8%A8%98%E4%BA%8B%E3%81%A9%E3%81%86%E3%81%97%E3%82%92%E3%81%A4%E3%81%AA%E3%81%90)の「同一語に対してすべての出現箇所でリンクしてはいけない」という指針に起因します。この問題に対処するために、各リンクに後続するテキストのうちでリンクの表示文字列と最長一致した文字列はリンクに置換するという処理を行なっています。
+
+以上の前処理を行うと上の記事は次のようになります。`/` は単語区切りを表します。
+
+> [AbemaTV]
+> [AbemaTV]  / （ / アベマティーヴィー / ） / は / 、 / [パーソナルコンピュータ] / ・ / [スマートフォン] / 向け / の / ライブストリーミング / 形式 / で / ある / [インターネットテレビ] / （ / 放送 / 事業 / 者 / で / は / ない / ） / 。 / [サイバーエージェント] / と / [テレビ朝日] / が / 出資 / し / て / 設立 / し / た / 株式会社 / [AbemaTV] / が / 運営 / し / て / いる / 。
+> ...
+>
+> [サイバーエージェント] / は / 従前 / から / 自社 / サービス / の / ブランド / 名 / として / 「 / [Ameba_(ネットサービス)] / 」 / を / 用い / て / いる / が / 、 / 「 / [Ameba_(ネットサービス)] / TV / 」 / は / カナダ / の / 企業 / が / 別 / サイト / で / 使用 / し / て / おり / 、 / 「 / 10 / 年 / 以上 / 続く / 「 / [Ameba_(ネットサービス)] / 」 / と / 違う / 新し / さ / が / あり / ながら / 、 / 「 / [Ameba_(ネットサービス)] / 」 / の / 延長 / で / ある / こと / も / 伝え / たい / 」 / ため / に / マスコットキャラクター / の / 「 / Abema / 」 / から / 「 / [AbemaTV] / 」 / と / し / た / 。 / この / 名称 / は / 「 / 覚え / にくい / ・ / 発音 / し / にくい / ・ / 間違え / やすい / の / 3 / 点 / セット / 」 / 「 / 正直 / 言っ / て / 、 / 半分 / くらい / 後悔 / し / て / い / ます / 」 / と / 藤田 / は / ブログ / に / 記し / て / いる / 。 / 『 / 「 / 逆さ / 読み / に / する / と / [Ameba_(ネットサービス)] / に / なる / 」 / と / 言う / 理由 / で / 採用 / し / た / 』 / と / 言う / 発言 / も / し / て / いる / 。
+
+その後、word2vecのCBOWモデルを用いて200次元の分散表現ベクトルを生成しています。
 
 ### word2vecのオプション
 
