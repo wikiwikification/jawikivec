@@ -76,7 +76,8 @@ word2vecのテキスト出力です。
 「日本語 Wikipedia エンティティベクトル」の簡単な説明を行います。詳しい内容は本家の[「日本語 Wikipedia エンティティベクトル」(日本語ページ)](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/) をご覧ください。
 
 「日本語 Wikipedia エンティティベクトル」は、分かち書きされた単語とWikipediaのエンティティを同一の分散表現空間のベクトルとして表したものです。
-Wikipediaのエンティティと一般的な単語の区別は、Wikipediaのリンクを表すMarkdownをベースにしています。
+
+以下ではWikipediaダンプデータからword2vecの入力テキストデータを作る工程を示します。
 例として、[Japanese-Wikipedia Wikification Corpus](https://github.com/wikiwikification/jawikicorpus)のWikipediaのエンティティ「AbemaTV」を挙げます。記事の内容は以下のとおりです。強調部分の文字列が記事へのリンクを表します。
 
 > **AbemaTV**
