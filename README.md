@@ -1,6 +1,6 @@
 # Yet Another Japanese-Wikipedia Entity Vectors
 
-## Summary
+## Overview
 
 Distribution vector representations of words and Wikipedia entities appeared in Japanese Wikipedia. The data is created based on the specification of "[Japanese-Wikipedia Entity Vectors (in Japanese)](http://www.cl.ecei.tohoku.ac.jp/~m-suzuki/jawiki_vector/)" released by Masatoshi Suzuki of Inui-Suzuki Laboratory in Tohoku University.
 
