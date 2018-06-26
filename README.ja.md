@@ -33,6 +33,7 @@ https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 ### 辞書: [mecab-ipadic](https://github.com/taku910/mecab/tree/master/mecab-ipadic)
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
+| [jawikivec.ipadic.20180620.tar.xz](https://www.dropbox.com/s/gufurtfv0dhzl85/jawikivec.ipadic.20180620.tar.xz) | jawikicorpus.20180620 | mecab-ipadic-2.7.0-20070801 | ac7afc5daaf15080b0beb3985281636b |
 | [jawikivec.ipadic.20180601.tar.xz](https://www.dropbox.com/s/s8p3eob5ysyxwqk/jawikivec.ipadic.20180601.tar.xz) | jawikicorpus.20180601 | mecab-ipadic-2.7.0-20070801 | a72e03aec91be9c287678ea7f3e17527 |
 | [jawikivec.ipadic.20180520.tar.xz](https://www.dropbox.com/s/98ftqtydopryaua/jawikivec.ipadic.20180520.tar.xz) | jawikicorpus.20180520 | mecab-ipadic-2.7.0-20070801 | 898b2562d6b851b84e4b467b92e5782a |
 
@@ -40,6 +41,7 @@ https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
+| [jawikivec.ipadic-neologd.20180620.tar.xz](https://www.dropbox.com/s/4ch6rjkp8w1ej5n/jawikivec.ipadic-neologd.20180620.tar.xz) | jawikicorpus.20180620 | mecab-ipadic-NEologd,1c6e9eb600bba348fa772e218b8ce57d4ce70d85 | 1431b93833a8431689fa2b8eef5d45c4 |
 | [jawikivec.ipadic-neologd.20180601.tar.xz](https://www.dropbox.com/s/7lcbp3wd8c9slo3/jawikivec.ipadic-neologd.20180601.tar.xz) | jawikicorpus.20180601 | mecab-ipadic-NEologd,3f6f113bc2b7b9eecbce45103a628ba715af3b33 | 2c88c8685ad9a821ffdc0ea833475e9a |
 | [jawikivec.ipadic-neologd.20180520.tar.xz](https://www.dropbox.com/s/wvq0s1fyaxuo8gy/jawikivec.ipadic-neologd.20180520.tar.xz) | jawikicorpus.20180520 | mecab-ipadic-NEologd,b8b282537589becf7256e74c80c543aa2eba5674 | 9d67c83dfe2ceb79bb3ac446a42ede40 |
 
