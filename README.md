@@ -33,7 +33,7 @@ https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 ### Dictionary: [mecab-ipadic](https://github.com/taku910/mecab/tree/master/mecab-ipadic)
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
-| [jawikivec.ipadic.20180801.tar.xz](https://www.dropbox.com/s/1opft0fnid2bk6r/jawikivec.ipadic.20180801.tar.xz) | jawikicorpus.20180801 | mecab-ipadic-2.7.0-20070801 | e4b528a59d3cbf3f4d90a0dc2c8ce9cb |
+| [jawikivec.ipadic.20180820.tar.xz](https://www.dropbox.com/s/axmm2yq3hftjf1h/jawikivec.ipadic.20180820.tar.xz) | jawikicorpus.20180820 | mecab-ipadic-2.7.0-20070801 | cc524c551cccf8fae29b086add0252b5 |
 | [jawikivec.ipadic.20180720.tar.xz](https://www.dropbox.com/s/5kzopgrw88ez1a2/jawikivec.ipadic.20180720.tar.xz) | jawikicorpus.20180720 | mecab-ipadic-2.7.0-20070801 | b3841ad1b46a024b403ed384609d4aad |
 | [jawikivec.ipadic.20180701.tar.xz](https://www.dropbox.com/s/4qpvs1dxass1fwo/jawikivec.ipadic.20180701.tar.xz) | jawikicorpus.20180701 | mecab-ipadic-2.7.0-20070801 | 65ee15ad182adf96cfc722b55c17b9ea |
 | [jawikivec.ipadic.20180620.tar.xz](https://www.dropbox.com/s/gufurtfv0dhzl85/jawikivec.ipadic.20180620.tar.xz) | jawikicorpus.20180620 | mecab-ipadic-2.7.0-20070801 | ac7afc5daaf15080b0beb3985281636b |
@@ -44,7 +44,7 @@ https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
-| [jawikivec.ipadic-neologd.20180801.tar.xz](https://www.dropbox.com/s/ujhd5ji42ycpwvl/jawikivec.ipadic-neologd.20180801.tar.xz) | jawikicorpus.20180801 | mecab-ipadic-NEologd,5dc3499bc3fcd28eed960ed03cd51765c5330fe2 | 54ef946c8ca7239f22be67b52e24a5e8 |
+| [jawikivec.ipadic-neologd.20180820.tar.xz](https://www.dropbox.com/s/e9w6yatsqi77vnk/jawikivec.ipadic-neologd.20180820.tar.xz) | jawikicorpus.20180820 | mecab-ipadic-NEologd,5dc3499bc3fcd28eed960ed03cd51765c5330fe2 | 8d361239c9ec57df78b1f2d527029f44 |
 | [jawikivec.ipadic-neologd.20180720.tar.xz](https://www.dropbox.com/s/kk1p76vtft19361/jawikivec.ipadic-neologd.20180720.tar.xz) | jawikicorpus.20180720 | mecab-ipadic-NEologd,172cfaa0aad1375d53879d273426cefe4a322e98 | 1587854da8d6efb742117d9e2933ab02 |
 | [jawikivec.ipadic-neologd.20180701.tar.xz](https://www.dropbox.com/s/u1yfj0ebou02pt4/jawikivec.ipadic-neologd.20180701.tar.xz) | jawikicorpus.20180701 | mecab-ipadic-NEologd,f4d27e2d50c5980a375d326fd8f0e95c881ed1ca | a6c996ab30adbf924270fcb3f292268e |
 | [jawikivec.ipadic-neologd.20180620.tar.xz](https://www.dropbox.com/s/4ch6rjkp8w1ej5n/jawikivec.ipadic-neologd.20180620.tar.xz) | jawikicorpus.20180620 | mecab-ipadic-NEologd,1c6e9eb600bba348fa772e218b8ce57d4ce70d85 | 1431b93833a8431689fa2b8eef5d45c4 |
