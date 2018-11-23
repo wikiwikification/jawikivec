@@ -33,6 +33,7 @@ https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 ### 辞書: [mecab-ipadic](https://github.com/taku910/mecab/tree/master/mecab-ipadic)
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
+| [jawikivec.ipadic.20181101.tar.xz](https://www.dropbox.com/s/9efggi632ud27jl/jawikivec.ipadic.20181101.tar.xz) | jawikicorpus.20181101 | mecab-ipadic-2.7.0-20070801 | ce2b0a197555021e5c0aac96e428c08c |
 | [jawikivec.ipadic.20181020.tar.xz](https://www.dropbox.com/s/57ksqqjpfp9tt01/jawikivec.ipadic.20181020.tar.xz) | jawikicorpus.20181020 | mecab-ipadic-2.7.0-20070801 | 2524636714d1418cba5ff0cbf1947c50 |
 | [jawikivec.ipadic.20181001.tar.xz](https://www.dropbox.com/s/6j68x5ou2g76f0x/jawikivec.ipadic.20181001.tar.xz) | jawikicorpus.20181001 | mecab-ipadic-2.7.0-20070801 | 693a9d75b936c9a2cb25147575f51eea |
 | [jawikivec.ipadic.20180920.tar.xz](https://www.dropbox.com/s/y5dh9ytdqana1rc/jawikivec.ipadic.20180920.tar.xz) | jawikicorpus.20180920 | mecab-ipadic-2.7.0-20070801 | ae63c1cb0c64382773ddfc823c0fce10 |
@@ -48,6 +49,7 @@ https://www.dropbox.com/sh/601gucye55nr1gq/AABekRrz4IYtp2n0_lTrKsGma
 
 | File | jawikicorpus | Dictionary | md5 |
 | --- | --- | --- | --- |
+| [jawikivec.ipadic-neologd.20181101.tar.xz](https://www.dropbox.com/s/hdafotxro89h6vw/jawikivec.ipadic-neologd.20181101.tar.xz) | jawikicorpus.20181101 | mecab-ipadic-NEologd,b3f3ac6fbdb5130894243c40726a9c4878075649 | 315a1ca2d0fee5d302ceef8cebbd2fe5 |
 | [jawikivec.ipadic-neologd.20181020.tar.xz](https://www.dropbox.com/s/fvcd2vrt21cpuh2/jawikivec.ipadic-neologd.20181020.tar.xz) | jawikicorpus.20181020 | mecab-ipadic-NEologd,b3f3ac6fbdb5130894243c40726a9c4878075649 | 4b4713493a7ffd8e1104bc393e0b3344 |
 | [jawikivec.ipadic-neologd.20181001.tar.xz](https://www.dropbox.com/s/4rp6w1fawwtid9h/jawikivec.ipadic-neologd.20181001.tar.xz) | jawikicorpus.20181001 | mecab-ipadic-NEologd,1e9da37787c202f157e59d4c9b19cd4636d8a60d | 03c0536e5e68310f8ce40559728a7c06 |
 | [jawikivec.ipadic-neologd.20180920.tar.xz](https://www.dropbox.com/s/lxc9jd3t88e6xhb/jawikivec.ipadic-neologd.20180920.tar.xz) | jawikicorpus.20180920 | mecab-ipadic-NEologd,3326dc5bb7467b51e7875f0f332cef6d89049617 | 2d8e0a4e38dc31f073eb97a32d14e684 |
